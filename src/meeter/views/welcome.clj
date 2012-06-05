@@ -4,6 +4,7 @@
   (:use [noir.core :only [defpage]]
         [hiccup.core :only [html]]))
 
-(defpage "/welcome" []
+(defpage "/" []
          (common/layout
-           [:p "Welcome to meeter"]))
+           (common/start)))
+
